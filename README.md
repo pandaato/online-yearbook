@@ -3,6 +3,7 @@
 **UCDavis Class of 2020 Yearbook**
 ===================================
 https://bee-ear-book.glitch.me/
+
 By Peter Lin, Grace Sun, and Aaron Pan
 --------------------------------------
 
