@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Luckiest+Guy&family=Nunito:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#information {
+  margin: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Image upload properties ========== */
+#imgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 20px;
+}
+
+#studentImg {
+  width: 100%;
+  height: auto;
+}
+
+div#portraitBox {
+  color: #022851;
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 20px; */
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#fillIn {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-left: 30px;
+  margin-top:2rem;
+  justify-content: center;
+  align-items: start;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #022851;
+  line-height: 3rem;
+}
+
+#name {
+  display: flex;
+  flex-direction: row;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+#freeTyping {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer a {
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  background-color: #022851;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  background-color: #FFBF00;
+}
+
+/* Major search styles */
+
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+/* MEDIA QUERY FOR PHONE VIEW */
+@media (max-width: 767px) {
+  #information {
+    margin: 2rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #portraitBox {
+    max-width: 50vh;
+    margin-right: 0;
+  }
+  
+  #fillIn {
+    max-width: 50vh;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  #footer {
+    margin-bottom: 10px;
+  }
+}
