@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Luckiest+Guy&family=Nunito:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: rgba(53, 91, 133);
+  min-height: 100vh;
+  position: relative;
+}
+
+.body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-image: url("https://cdn.glitch.com/a6799230-208a-430d-82bc-06eacb9351f8%2FUCDAGGIES.png?v=1591392691068");
+  background-size: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  position: relative;
+  
+}
+
+#down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 70px;
+  color: white;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  color: #033266;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h3{
+  font-family: "Nunito", sans-serif;
+  font-size:0.9rem;
+  color:white;
+  margin-left:10px;
+  margin-top:10px;
+}
+
+#s {
+  font-family: "Nunito", sans-serif;
+  /* font-size: 0.8rem; moved to blacktext */
+  /* color: #6A6A6A; moved to blacktext */ 
+  padding-bottom: 30px;
+}
+
+.blacktext {
+  font-size: 1rem;
+  color: #6A6A6A;
+}
+.redtext {
+  font-size: 1.2rem;
+  color: #bd1547;
+}
+
+#login {
+  /* flex stuff */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  height: 200px;
+  width: 300px;
+  padding: 50px 80px 50px 80px;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  border-radius: 10px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#yearbookButton {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #033266;
+  background: white;
+  padding: 13px 20px 7px 20px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  max-width: 160px;
+  text-decoration: none;
+
+}
+
+
+
+#yearbookButton:link {
+  text-decoration: none;
+}
+
+#searchButton{
+  display: flex;
+  flex-direction: row;
+}
+
+#search {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  background: white;
+  padding: 20px;
+  width: 475px;
+  height: 40px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#bar{
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  padding: 14px;
+  border-radius: 15px;
+  margin-left:5px;
+}
+
+#bar:hover{
+  background-color:#FFBF00;
+  cursor: pointer;
+}
+
+/* Advance search */
+
+#advanceSearch {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#searchArea{
+  padding:10px 0;
+  margin:10px;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.shown{
+  opacity: 1;
+}
+
+#advanceSearch:hover {
+  cursor: pointer;
+}
+
+#results select {
+  margin: 10px;
+  margin-bottom:0;
+  height: 40px;
+  width: 230px;
+  background: #f1f1f1;
+  padding: 8px;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem; 
+}
+
+#results option{
+  padding:10px;
+}
+
+#button {
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Major search styles */
+
+.centered {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.autocomplete {
+  position: relative;
+  width: 250px;
+  display: flex;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 8px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.autocomplete-items {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 10px;
+  margin-top: 0;
+  max-height: 175px;
+  overflow: auto;
+  font-size: 0.8rem;
+  font-family: "Nunito", sans-serif;
+}
+
+.autocomplete-items div {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+  color: #2f3542;
+}
+
+.autocomplete-active {
+  background-color: #2f3542 !important;
+  color: #ffffff !important;
+}
+
+#myMajor {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+#myMinor {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+/* MEDIA QUERY FOR TABLET VIEW */
+/* media query for tablet */
+@media (max-width: 992px) {
+  h1 {
+    padding: 35px;
+  }
+  
+  #down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  #s {
+    padding-bottom: 20px;
+  }
+  
+  #yearbookButton {
+    margin-top: none;
+    margin-bottom: 40px;
+  }
+  
+  .autocomplete {
+    width: 280px;
+  }
+  
+  #results select {
+    width: 280px;
+  }
+  
+}
+
+/* MEDIA QUERY FOR PHONE VIEW */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #login {
+    margin-top: 0px;
+    padding: 50px;
+    width: 300px;
+  }
+  
+  #down {
+    margin-top: 0;
+  }
+  
+  #search {
+    width: 250px;
+  }
+  
+  .centered {
+    flex-direction: column;
+  }
+  
+} 
